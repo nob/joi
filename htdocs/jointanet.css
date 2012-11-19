@@ -23,13 +23,15 @@ div#ground {
     font-weight: bold;
     color: #432D15;
 }
-div#sea {
+footer#sea {
     margin: 0px 0px;
-    padding: 40px 0px 0px;
+    padding: 40px 0px 10px;
+    /*
     height: 300px;
+    */
     background-color: #00A1A1;
 }
-div#sea div#vid {
+div#vid {
     margin: 0px auto;
     width: 400px;
     height: 266px;
