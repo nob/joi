@@ -26,10 +26,8 @@ div#ground {
 footer#sea {
     margin: 0px 0px;
     padding: 40px 0px 10px;
-    /*
-    height: 300px;
-    */
     background-color: #00A1A1;
+    overflow:hidden;
 }
 div#vid {
     margin: 0px auto;
