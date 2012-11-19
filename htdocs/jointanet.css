@@ -1,13 +1,14 @@
 body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+div#main {
     background-image: url('http://www.jointanet.com/img/bg.jpg');
     margin: 0px 0px;
-}
-header {
-    height: 20px;
-    background-color: #00A1A1;
+    padding: 10px 0px;
 }
 div#pic {
-    margin: 10px auto 20px;
+    margin: 0px auto 0px;
     background-image: url('http://www.jointanet.com/img/joi.png');
     width: 420px;
     height: 507px;
