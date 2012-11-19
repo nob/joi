@@ -5,10 +5,10 @@ body {
 div#main {
     background-image: url('http://www.jointanet.com/img/bg.jpg');
     margin: 0px 0px;
-    padding: 10px 0px;
+    padding: 10px 0px 0px;
 }
 div#pic {
-    margin: 0px auto 0px;
+    margin: 0px auto 10px;
     background-image: url('http://www.jointanet.com/img/joi.png');
     width: 420px;
     height: 507px;
