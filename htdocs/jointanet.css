@@ -1,0 +1,36 @@
+body {
+    background-image: url('http://www.jointanet.com/img/bg.jpg');
+    margin: 0px 0px;
+}
+header {
+    height: 20px;
+    background-color: #00A1A1;
+}
+div#pic {
+    margin: 10px auto 20px;
+    background-image: url('http://www.jointanet.com/img/joi.png');
+    width: 420px;
+    height: 507px;
+}
+div#ground {
+    background-color: #A16C34;
+    height: 20px;
+    margin: 0px 0px;
+    padding: 0px 0px 4px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: bold;
+    color: #432D15;
+}
+div#sea {
+    margin: 0px 0px;
+    padding: 40px 0px 0px;
+    height: 300px;
+    background-color: #00A1A1;
+}
+div#sea div#vid {
+    margin: 0px auto;
+    width: 400px;
+    height: 266px;
+}
