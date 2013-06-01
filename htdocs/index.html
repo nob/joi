@@ -2,15 +2,94 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Jointanet</title>
+	<title>Jointanet | Internet/Web systems design, consulting</title>
     <link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="jointanet.css">
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".thumb-shadow[rel]").overlay({mask: '#000', top: '14%'});
+        });
+    </script>
 </head>
 <body>
 <div id="main">	
 <div id="pic"></div>	
 <div id="ground">
-    Internet/Web systems design, development, consulting 
+    <h1>We help small businesses by Internet/Web systems design, creation, tech-support and consulting. </h1>
+
+    <ul id="works">
+        <li>    
+            <div id="work-thumb1">
+                <div class="thumb-shadow" rel="#work1"><span>work #1</span></div>
+            </div>
+        </li>
+        <li>    
+            <div id="work-thumb2">
+                <div class="thumb-shadow" rel="#work2"><span>work #2</span></div>
+            </div>
+        </li>
+        <li>    
+            <div id="work-thumb3">
+                <div class="thumb-shadow" rel="#work3"><span>work #3</span></div>
+            </div>
+        </li>
+        <li>    
+            <div id="work-thumb4">
+                <div class="thumb-shadow" rel="#work4"><span>work #4</span></div>
+            </div>
+        </li>
+        <li>    
+            <div id="work-thumb5">
+                <div class="thumb-shadow" rel="#work5"><span>work #5</span></div>
+            </div>
+        </li>
+        <li>    
+            <div id="work-thumb-etc">
+                <div id="thumb-etc-shadow"><span>...and more.</span></div>
+            </div>
+        </li>
+    </ul>	
+    <div class="simple_overlay" id="work1">
+      <!-- large image -->
+      <img src="/img/ippuku.png" />
+      <!-- image details -->
+      <div class="details">
+        <p><a href="http://www.ippukuberkeley.com" target="_blank">ippukuberkeley.com</a></p>
+      </div>
+    </div>
+    <div class="simple_overlay" id="work2">
+      <!-- large image -->
+      <img src="/img/kioto.png" />
+      <!-- image details -->
+      <div class="details">
+        <p><a href="http://www.kiotoinc.com" target="_blank">kiotoinc.com</a></p>
+      </div>
+    </div>
+    <div class="simple_overlay" id="work3">
+      <!-- large image -->
+      <img src="/img/bglen.png" />
+      <!-- image details -->
+      <div class="details">
+        <p><a href="http://www.bglen.com" target="_blank">bglen.com</a></p>
+      </div>
+    </div>
+    <div class="simple_overlay" id="work4">
+      <!-- large image -->
+      <img src="/img/zionus.png" />
+      <!-- image details -->
+      <div class="details">
+        <p><a href="http://www.zionusbsm.com" target="_blank">zionusbsm.com</a></p>
+      </div>
+    </div>
+    <div class="simple_overlay" id="work5">
+      <!-- large image -->
+      <img src="/img/skfine.png" />
+      <!-- image details -->
+      <div class="details">
+        <p><a href="http://www.skfine.com" target="_blank">skfine.com</a></p>
+      </div>
+    </div>
 </div>
 </div>
 <footer id="sea">

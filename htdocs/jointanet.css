@@ -14,24 +14,128 @@ div#pic {
     height: 507px;
 }
 div#ground {
-    background-color: #A16C34;
-    height: 20px;
+    background-color: #00A1A1;
     margin: 0px 0px;
     padding: 0px 0px 4px;
     text-align: center;
+}
+div#ground h1{
+    padding: 10px 0 0;
+    color: #d1d1d1;
+    font-size: 20px;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: bold;
+}
+ul#works {
+}
+ul#works li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px 0;
+}
+ul#works li > div {
+    width: 180px;
+    height: 123px;
+}
+ul#works li #work-thumb1 {
+    background-image: url('/img/ippuku-thumb.png');
+}
+ul#works li #work-thumb2 {
+    background-image: url('/img/kioto-thumb.png');
+}
+ul#works li #work-thumb3 {
+    background-image: url('/img/bglen-thumb.png');
+}
+ul#works li #work-thumb4 {
+    background-image: url('/img/zionus-thumb.png');
+}
+ul#works li #work-thumb5 {
+    background-image: url('/img/skfine-thumb.png');
+}
+ul#works li .thumb-shadow {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    filter:alpha(opacity=80);
+    color: #d1d1d1;
     font-size: 17px;
     font-family: 'Average Sans', sans-serif;
     font-weight: bold;
-    color: #432D15;
+    margin: 0 0;
+    padding: 45px 0 0;
+    width: 180px;
+    height: 78px;
+}
+ul#works li .thumb-shadow:hover {
+    background: rgba(0, 0, 0, 0.0);
+    opacity: 0.0; 
+    filter:alpha(opacity=0);
+}
+div#thumb-etc-shadow {
+    cursor: default; 
+
+    background: rgba(0, 0, 0, 0.8);
+    filter:alpha(opacity=80);
+    color: #d1d1d1;
+    font-size: 17px;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: bold;
+    margin: 0 0;
+    padding: 45px 0 0;
+    width: 180px;
+    height: 78px;
 }
 footer#sea {
     margin: 0px 0px;
     padding: 40px 0px 10px;
-    background-color: #00A1A1;
+    background-color: #007777;
     overflow:hidden;
 }
 div#vid {
     margin: 0px auto;
     width: 400px;
     height: 266px;
+}
+/* the overlayed element */
+.simple_overlay {
+ 
+    /* must be initially hidden */
+    display:none;
+    /* place overlay on top of other elements */
+    z-index:10000;
+    /* styling */
+    background-color:#333;
+    width:630px;
+    height: 460px; 
+    border:4px solid #333;
+ 
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+ 
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+    background-image:url(/img/close.png);
+    position:absolute;
+    left:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+/* styling for elements inside overlay */
+.details {
+    height:30px;
+    margin: 0 0;
+    padding: 0 0;
+    border: 0px solid #333;
+}
+.details p {
+    margin: 4px 0; 
+}
+.details a {
+    font-family: 'Average Sans', sans-serif;
+    font-size:15px;
+    color:#d1d1d1;
 }
