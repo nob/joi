@@ -1,0 +1,224 @@
+INFO|Sat, 13 Jul 2013 00:09:54 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 00:09:57 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 00:10:01 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 00:10:04 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 00:10:43 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 02:27:24 +0900|page|content|/src|::1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+INFO|Sat, 13 Jul 2013 02:27:27 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:27:34 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:28:12 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:28:21 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 02:29:11 +0900|page|content|/css/normalize.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/form.html">/form.html</a>.
+ERROR|Sat, 13 Jul 2013 02:29:11 +0900|page|content|/css/kioto.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/form.html">/form.html</a>.
+ERROR|Sat, 13 Jul 2013 02:29:11 +0900|page|content|/js/form-v2.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/form.html">/form.html</a>.
+INFO|Sat, 13 Jul 2013 02:29:38 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:46:53 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:47:22 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:47:22 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:47:43 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:48:54 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:48:54 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 02:54:25 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 03:00:07 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 03:58:36 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 07:36:30 +0900|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:14:36 +0900|visitor|content|/fdsafas|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:14:38 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:17:08 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:21:20 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:21:37 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:29:40 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:29:45 +0900|visitor|content|/dfklsakflsa/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:29:48 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:30:09 +0900|visitor|content|/dfklsakflsa/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:30:11 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:30:35 +0900|visitor|content|/dfklsakflsa|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:30:37 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:43:05 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:43:12 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:43:22 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:43:24 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:43:39 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:43:46 +0900|visitor|content|/pricejkj|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:43:48 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:44:06 +0900|visitor|content|/pricejkj|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:44:08 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:44:12 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:44:23 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:44:32 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:55:08 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:55:15 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:55:31 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:55:52 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:56:21 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:56:40 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:56:53 +0900|visitor|content|/pricei/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:56:55 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:57:59 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:58:00 +0900|visitor|content|/404/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:58:02 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:58:15 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:59:22 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:59:31 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 08:59:36 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 08:59:42 +0900|visitor|content|/404/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 08:59:44 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:00:53 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:01:09 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 09:01:16 +0900|visitor|content|/404/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 09:01:18 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 09:01:43 +0900|visitor|content|/gfdsgsd/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 09:01:46 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 09:01:48 +0900|visitor|content|/gfdsgsd|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 09:01:50 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 09:01:55 +0900|visitor|content|/gfdsgsd/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 09:01:58 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:02:06 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:02:39 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 09:02:41 +0900|visitor|content|/404/|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 09:02:44 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:04:49 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 09:19:15 +0900|visitor|content|/index.php/_themes/choco-mint/css/bootstrap.css|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Sat, 13 Jul 2013 09:20:09 +0900|visitor|content|/index.php/asstes/img/service-1.png|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 09:42:49 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:42:55 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:44:50 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:46:40 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:51:52 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 09:56:12 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:02:04 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:03:10 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:04:01 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:04:15 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:04:31 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:04:43 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:18:22 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:18:35 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:18:39 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:18:41 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:19:08 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:19:32 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:19:54 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:20:09 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:21:01 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:28:14 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:32:50 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:33:02 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:33:44 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:33:52 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:34:25 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:34:39 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:34:56 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:35:07 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:35:20 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:35:29 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:35:50 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:35:56 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:36:59 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 10:37:28 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:23:04 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:23:49 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:23:54 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:24:01 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:24:09 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:24:15 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:24:36 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:24:41 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:25:37 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:26:16 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:26:20 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:26:26 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 11:26:51 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:26:54 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:27:01 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:27:05 +0900|site|favicon|/favicon.ico|127.0.0.1|live|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:29:46 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:29:53 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:43:38 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:44:09 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:44:25 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:44:55 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:46:03 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:46:32 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:47:13 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:47:20 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:47:53 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 12:47:57 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:23:29 +0900|site|favicon|/favicon.ico/|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:23:35 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:23:43 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:25:34 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:26:32 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:27:39 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:32:46 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:32:46 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 13:35:21 +0900|visitor|content|/pricoooe|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 13:35:23 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:35:29 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:35:32 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:39:35 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:39:40 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:39:45 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:57:33 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 13:57:41 +0900|visitor|content|/pri|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 13:57:43 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 13:57:47 +0900|visitor|content|/pri|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 13:57:49 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 13:57:58 +0900|visitor|content|/pri|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 13:58:00 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 13:59:08 +0900|visitor|content|/pri|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 13:59:10 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 13:59:11 +0900|visitor|content|/pri|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 13:59:13 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:59:17 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 13:59:22 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 14:00:43 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 16:03:22 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 19:43:30 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:13:39 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:15:01 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:15:24 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:16:54 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:16:55 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:16:57 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:17:38 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:18:04 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:18:19 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:18:23 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:19:03 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:19:07 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:19:20 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:19:23 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:19:43 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:19:48 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+FATAL|Sat, 13 Jul 2013 20:20:24 +0900|core|view|/|::1|dev|Undefined variable: plug on line 206.
+exception 'ErrorException' with message 'Undefined variable: plug' in /Users/nob/projects/joi/htdocs/_app/core/view.php:206
+Stack trace:
+#0 /Users/nob/projects/joi/htdocs/_app/core/view.php(206): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/nob/proj...', 206, Array)
+#1 [internal function]: Statamic_View->callback('current_url', Array, '')
+#2 /Users/nob/projects/joi/htdocs/_app/vendor/Lex/Parser.php(320): call_user_func_array(Array, Array)
+#3 /Users/nob/projects/joi/htdocs/_app/vendor/Lex/Parser.php(82): Lex\Parser->parseCallbackTags('<!DOCTYPE html>...', Array, Array)
+#4 /Users/nob/projects/joi/htdocs/_app/core/view.php(125): Lex\Parser->parse('<!DOCTYPE html>...', Array, Array, true)
+#5 /Users/nob/projects/joi/htdocs/_app/core/view.php(99): Statamic_View->_render_layout('        <sectio...', 'html')
+#6 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/View.php(195): Statamic_View->render(NULL)
+#7 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/View.php(182): Slim\View->fetch(NULL)
+#8 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Slim.php(672): Slim\View->display(NULL)
+#9 /Users/nob/projects/joi/htdocs/_app/routes.php(256): Slim\Slim->render(NULL, Array, 200)
+#10 [internal function]: {closure}()
+#11 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Router.php(172): call_user_func_array(Object(Closure), Array)
+#12 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Slim.php(1222): Slim\Router->dispatch(Object(Slim\Route))
+#13 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Middleware/Flash.php(86): Slim\Slim->call()
+#14 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Middleware/MethodOverride.php(94): Slim\Middleware\Flash->call()
+#15 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Middleware/SessionCookie.php(116): Slim\Middleware\MethodOverride->call()
+#16 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\SessionCookie->call()
+#17 /Users/nob/projects/joi/htdocs/_app/vendor/Slim/Slim.php(1174): Slim\Middleware\PrettyExceptions->call()
+#18 /Users/nob/projects/joi/htdocs/index.php(65): Slim\Slim->run()
+#19 {main}
+INFO|Sat, 13 Jul 2013 20:20:25 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:32:20 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 20:32:49 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+ERROR|Sat, 13 Jul 2013 20:32:55 +0900|visitor|content|/fkds|::1|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+INFO|Sat, 13 Jul 2013 20:32:56 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 21:20:53 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 21:21:21 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.
+INFO|Sat, 13 Jul 2013 21:26:42 +0900|site|favicon|/favicon.ico|::1|dev|The site favicon could not be found.

@@ -1,0 +1,79 @@
+        <section id="message">
+            <div class="container">
+                <img id="radio-wave" src="/assets/img/radio-wave.png">
+                <h1>成長するあなたのビジネスを<br/>ずっと伝えるウェブサイト</h1>
+            </div>
+        </section>
+        <section id="service">
+            <div class="container">
+                <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
+                {{ entries:listing folder="service" }}
+                <section class="row featurette">
+                <div class="span7  {{ switch between="pull-left | pull-right" }}">
+                    <img class="featurette-image" src="/assets/img/{{ image }}" alt="{{ title }}"></img>
+                </div>
+                <div class="span5">
+                    <h2>{{ title }}<small><br>{{ sub-title }}</small></h2>
+                    <p>{{ content }}</p>
+                    <p><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                </div>
+                </section>
+                {{ if !last}}
+                <hr class="featurette-divider">
+                {{ endif }}
+                {{ /entries:listing }}
+            </div>
+        </section>
+        <section id="price">
+            <div class="container">
+                <h1 class="text-center hidden-desktop">料金</h1>
+                <section class="row featurette">
+                    <h2>月額￥35,000 + 初期費用￥0。<small><br>シンプルな料金設定</small></h2>
+                    <p>A mattis sagittis adipiscing ac, nec. Auctor tincidunt magna? Eros dignissim magnis dolor, vut tristique a! Integer pid placerat magnis in! Cursus? Pellentesque? Nascetur dictumst massa sed, auctor augue? Etiam sagittis adipiscing ut in urna. Dictumst. Sagittis massa. Ultricies arcu augue lundium, etiam tristique tortor. Odio, sit massa tristique duis vel penatibus. Natoque auctor risus lectus ultrices in ultrices pid, elit in aliquam pid dolor platea, porttitor amet porta non! Nunc habitasse risus porta lacus, urna? Nisi amet habitasse aliquet, lacus arcu cum dapibus nec, mid nisi ut, auctor scelerisque? Lorem, scelerisque natoque amet elit amet! Mauris diam, amet nascetur! In proin ac et aliquet integer aliquam vel sed augue! Lundium massa sed aliquet! Lundium pulvinar montes sit cum! Magna tortor nec augue ac, arcu porttitor lacus porta, quis platea.</p>
+                    <p>A mattis sagittis adipiscing ac, nec. Auctor tincidunt magna? Eros dignissim magnis dolor, vut tristique a! Integer pid placerat magnis in! Cursus? Pellentesque? Nascetur dictumst massa sed, auctor augue? Etiam sagittis adipiscing ut in urna. Dictumst. Sagittis massa. Ultricies arcu augue lundium, etiam tristique tortor. Odio, sit massa tristique duis vel penatibus. Natoque auctor risus lectus ultrices in ultrices pid, elit in aliquam pid dolor platea, porttitor amet porta non! Nunc habitasse risus porta lacus, urna? Nisi amet habitasse aliquet, lacus arcu cum dapibus nec, mid nisi ut, auctor scelerisque? Lorem, scelerisque natoque amet elit amet! Mauris diam, amet nascetur! In proin ac et aliquet integer aliquam vel sed augue! Lundium massa sed aliquet! Lundium pulvinar montes sit cum! Magna tortor nec augue ac, arcu porttitor lacus porta, quis platea.</p>
+                </section>
+            </div>
+        </section>
+        <section id="works">
+            <div class="container">
+                <h1 class="text-center hidden-desktop">制作事例</h1>
+                <div class="row">
+                    <ul class="thumbnails">
+                      <li class="span4">
+                        <a href="#" class="thumbnail">
+                          <img src="/assets/img/ippuku-thumb.png" alt="">
+                        </a>
+                      </li>
+                      <li class="span4">
+                        <a href="#" class="thumbnail">
+                          <img src="/assets/img/kioto-thumb.png" alt="">
+                        </a>
+                      </li>
+                      <li class="span4">
+                        <a href="#" class="thumbnail">
+                          <img src="/assets/img/bglen-thumb.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="thumbnails">
+                      <li class="span4">
+                        <a href="#" class="thumbnail">
+                          <img src="/assets/img/zionus-thumb.png" alt="">
+                        </a>
+                      </li>
+                      <li class="span4">
+                        <a href="#" class="thumbnail">
+                          <img src="/assets/img/skfine-thumb.png" alt="">
+                        </a>
+                      </li>
+                      <li class="span4 hidden-phone">
+                        <a class="thumbnail">
+                            <img src="/assets/img/etc-thumb.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </section>

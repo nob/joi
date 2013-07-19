@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ja" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{title}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-responsive.min.css"> -->
+        <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <script src="/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="site-header">
+        <!--[if lt IE 8]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <header id="site-header">
+            <div id="top-pad1"></div>
+            <div id="top-pad2"></div>
+            <div class="container clearfix">
+                <a class="logo" href="/"><img src="/assets/img/logo-l.png" alt="Jointanet"></a>
+                <ul class="nav visible-desktop clearfix">
+                    <li class="text-center"><a href="{{ if current_path !== '/' }}/{{ endif}}#service"><strong>サービス</strong></a></li>
+                    <li class="text-center"><a href="{{ if current_path !== '/' }}/{{ endif}}#price"><strong>料金</strong></a></li>
+                    <li class="text-center"><a href="{{ if current_path !== '/' }}/{{ endif}}#works"><strong>制作事例</strong></a></li>
+                </ul>
+                {{ if current_path !== '/' }}
+                <a id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" href="{{ back-url }}" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
+                {{ endif }}
+            </div>
+        </header>
+        {{ layout_content }}
+        <footer id="site-footer">
+            <div id="top-pad2"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <img class="logo" src="/assets/img/logo-l.png" alt="Jointanet">
+                    </div>
+                    <div class="span6">
+                        <address class="clearfix">
+                            <h4>ジョインタネット</h4>
+                            <p><small>住所:&nbsp;</small>〒547-0026 大阪府 大阪市平野区喜連西 4-7-16-408</p>
+                            <p><small>電話:&nbsp;</small>050−3697-1928&nbsp;(Japan)</p>
+                            <p><small>事業内容:&nbsp;</small>インターネット/ウェブ システムデザイン、制作、コンサルティング</p>
+                        </address>
+                        <address class="clearfix">
+                            <p class="pull-left"><img class="face" src="/assets/img/yanbe-c.png" alt="山辺&nbsp;登"></p>
+                            <p><small>代表:&nbsp;</small><strong>山辺&nbsp;登</strong></p>
+                        </address>
+                    </div>
+                    <div class="span6">
+                        <h5>以下の入力フォームから、いつでもお気軽にご相談、ご質問下さい。</h5>
+                        <p><small>48時間以内にこちらからご連絡させて頂きます。</small></p>
+                        <form action="form.php" method="post" accept-charset="utf-8">
+                            <textarea name="inquiry-msg" rows="7" placeholder="あなたが既にお持ちのウェブサイトについて、　新しく制作したいウェブサイトについて、等…"></textarea>
+<!--
+                            <div class="btns clearfix">
+                                <a id="btn-inquiry-next" class="btn btn-large btn-danger pull-right" type="button">次へ&nbsp;<i class="icon-chevron-right icon-white"></i></a>
+                            </div>
+-->
+                            <h5>お名前とご連絡先をお聞かせ下さい。</h5>
+                            <p><small>第三者にこれらの情報をを提供することは致しません。</small></p>
+                            <div>
+                                <label for="name">お名前</label><input type="text" name="name" value="" placeholder="">
+                            </div>
+                            <div>
+                                <label for="email">Eメールアドレス</label><input type="email" name="email" value="" placeholder="">
+                            </div>
+                            <div>
+                                <label for="url">ウェブサイトアドレス(もし既にあれば)</label><input type="url" name="url" value="" placeholder="http://">
+                            </div>
+                            <div class="btns clearfix">
+                                <a id="btn-inquiry-back" class="btn btn-inverse pull-left" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
+                                <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">送信&nbsp;<i class=" icon-ok icon-white"></i></button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
+        {{ if enable_analytics }}
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        {{ endif }}
+    </body>
+</html>

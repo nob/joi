@@ -1,0 +1,151 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+   	background-repeat: repeat;
+    background-image: url(../img/white_paperboard.png);
+}
+header {
+	position: fixed;
+	top: 0px;
+	min-width: 100%;
+}
+#top-pad1 {
+	height: 18px;	
+	background: #31281E;
+}
+#top-pad2 {
+	height: 9px;	
+	background: #1B6E75;
+}
+.navbar {
+}
+.navbar-inner {
+	margin: 0px auto; 
+   	background-repeat: repeat;
+    background-image: url(../img/white_paperboard.png);
+	height: 43px;
+}
+.nav-collapse{
+	position: absolute;
+	right: 400px;
+}
+.brand{
+	position: absolute;
+	right: 100px;
+}
+.navbar .brand {
+	margin: 0 0;
+	padding: 0 0; 
+	font-family: BritannicBold;
+	font-size: 55px;
+	color: #1B6E75;
+	line-height: 33px;	
+}
+.navbar .nav > li > a {
+	font-family: HiraKakuStdN-W8;
+	font-size: 16px;
+	color: #32281F;
+	line-height: 23px;
+	width: 100px;
+	text-align: center;
+}
+#message {
+   	background-repeat: no-repeat;
+    background-image: url(../img/message.png);
+   	background-size: cover;
+   	min-width:100%;
+   	height: 580px;
+}
+#radio-wave {
+	position: relative;
+	top: -300px;
+	left: 70px;
+}
+#message h1 {
+	background-color: transparent;
+	font-family: HiraKakuStdN-W8;
+	font-size: 36px;
+	color: #E9B2B7;
+	line-height: 54px;
+	text-shadow: 0px 2px 4px #4A4A4A;
+	margin-left: 240px;
+	padding-top: 190px;
+}
+#message h1 strong {
+	font-size: 45px;
+}
+#service h1, #price h1, #works h1 {
+	font-family: HiraKakuStdN-W8;
+	font-size: 27px;
+	/*color: #993A43;*/
+	color: #1B6E75;
+	line-height: 41px;
+	width: 400px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 0px auto;
+	text-align: center;
+}
+#price h1 {
+	/*color: #E7A3A9;*/
+	color: #CAF1E5;
+}
+.featurette h2 {
+	font-family: HiraKakuStdN-W8;
+	font-size: 23px;
+	color: #4A4A4A;
+	line-height: 27px;
+}
+.featurette p {
+	font-family: HiraKakuProN-W3;
+	font-size: 20px;
+	color: #5a5a5a;
+	line-height: 30px;
+}
+#price .featurette h2 {
+	color: #EDE6E6;
+}
+#price .featurette p {
+	color: #EFE5E5;
+}
+.featurette {
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+.featurette-divider {
+	/*border: 1px solid #D3D0D0;*/
+	border: 1px solid #EEEEEE;
+	margin: 70px 0;
+}
+.featurette-image.pull-right {
+	margin-left: 70px;	
+}
+.featurette-image.pull-left {
+	margin-right: 70px;	
+}
+#price {
+   	background-repeat: repeat;
+    background-image: url(../img/green-fibers.png);
+}
+footer {
+	background-color: #31281E;
+	height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
