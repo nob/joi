@@ -19,7 +19,7 @@
 
 <div id="screen">
 
-  <?php if (Config::get('_enable_add_top_level_page', true) && $are_fieldsets):?>
+  <?php if (Config::get('_enable_add_section', true) && $are_fieldsets):?>
     <a href="#" class="btn add-page-btn" data-path="/" data-title="None"><?php echo Localization::fetch('new_top_level_page')?></a>
   <?php endif ?>
 
@@ -66,10 +66,12 @@
           <?php else:
             $folder = dirname($page['file_path']);
           ?>
-            <div class="page-view"><a href="<?php print $page['url'] ?>" class="tip" title="View Page"><span class="icon">M</span></a></div>
+            <div class="page-view"><a href="<?php print URL::assemble(Config::getSiteRoot(), $page['url']); ?>" class="tip" title="View Page"><span class="icon">M</span></a></div>
+            <?php if (Config::get('_enable_add_child_page', true) && $are_fieldsets):?>
             <div class="page-add">
               <a href="#" data-path="<?php print $folder; ?>" data-title="<?php print $page['title']?>" class="tip add-page-btn" title="<?php echo Localization::fetch('new_child_page')?>"><span class="icon">j</span></a>
             </div>
+            <?php endif ?>
             <?php if (Config::get('_enable_delete_page', true)):?>
               <div class="page-delete"><a class="confirm" href="<?php print $app->urlFor('delete_page') . '?path=' . $page['raw_url'] . '&type=' . $page['type']?>" class="tip" title="<?php echo Localization::fetch('delete_page')?>"><span class="icon">u</span></a></div>
             <?php endif ?>
@@ -99,9 +101,9 @@
 
     <!-- PAGE TITLE -->
       <?php if ($page['type'] == 'file'): ?>
-        <a href="<?php print $app->urlFor('publish')."?path={$base}/{$page['slug']}"; ?>"><span class="page-title"><?php print isset($page['title']) ? $page['title'] : Statamic_Helper::prettify($page['slug']) ?></span></a>
+        <a href="<?php print $app->urlFor('publish')."?path={$base}/{$page['slug']}"; ?>"><span class="page-title"><?php print isset($page['title']) ? $page['title'] : Slug::prettify($page['slug']) ?></span></a>
       <?php else: ?>
-        <a href="<?php print $app->urlFor('publish')."?path={$page['file_path']}"; ?>"><span class="page-title"><?php print isset($page['title']) ? $page['title'] : Statamic_Helper::prettify($page['slug']) ?></span></a>
+        <a href="<?php print $app->urlFor('publish')."?path={$page['file_path']}"; ?>"><span class="page-title"><?php print isset($page['title']) ? $page['title'] : Slug::prettify($page['slug']) ?></span></a>
 
       <?php endif ?>
 
@@ -123,8 +125,8 @@
 
     <!-- SLUG & VIEW PAGE LINK -->
     <div class="page-extras">
-      <div class="page-view"><a href="<?php print $page['url']?>" class="tip" title="View Page"><span class="icon">M</span></a></div>
-      <?php if ($page['type'] != 'file'): ?>
+      <div class="page-view"><a href="<?php print URL::assemble(Config::getSiteRoot(), $page['url'])?>" class="tip" title="View Page"><span class="icon">M</span></a></div>
+      <?php if ($page['type'] !== 'file' && Config::get('_enable_add_child_page', true)): ?>
       <div class="page-add"><a href="#" data-path="<?php print $page['raw_url']?>" data-title="<?php print $page['title']?>" class="tip add-page-btn" title="<?php echo Localization::fetch('new_child_page')?>"><span class="icon">j</span></a></div>
       <?php endif; ?>
       <div class="page-delete"><a class="confirm" href="<?php print $app->urlFor('delete_page') . '?path=' . $page['raw_url'] . '&type=' . $page['type']?>" class="tip" title="<?php echo Localization::fetch('delete_page')?>"><span class="icon">u</span></a></div>

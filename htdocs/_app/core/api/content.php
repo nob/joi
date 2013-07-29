@@ -87,7 +87,7 @@ class Content
         }
 
         if (Config::get('_enable_smartypants', TRUE) == TRUE) {
-            $content = SmartyPants($content);
+            $content = SmartyPants($content, 2);
         }
 
         return trim($content);

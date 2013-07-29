@@ -1,6 +1,6 @@
 <?php
 
-const STATAMIC_VERSION = '1.5.2';
+const STATAMIC_VERSION = '1.5.4';
 const APP_PATH = __DIR__;
 
 /*
@@ -13,6 +13,8 @@ const APP_PATH = __DIR__;
 */
 
 require_once __DIR__ . '/vendor/Slim/Slim.php';
+require_once __DIR__ . '/vendor/SplClassLoader.php';
+
 \Slim\Slim::registerAutoloader();
 
 /*
@@ -24,16 +26,17 @@ require_once __DIR__ . '/vendor/Slim/Slim.php';
 |
 */
 
-require_once __DIR__ . '/vendor/SplClassLoader.php';
+$packages = array(
+  'Symfony',
+  'Buzz',
+  'Stampie',
+  'Intervention'
+);
 
-$loader = new SplClassLoader('Symfony', __dir__.'/vendor/');
-$loader->register();
-
-$loader = new SplClassLoader('Buzz', __dir__.'/vendor/');
-$loader->register();
-
-$loader = new SplClassLoader('Stampie', __dir__.'/vendor/');
-$loader->register();
+foreach ($packages as $package) {
+  $loader = new SplClassLoader($package, __DIR__ . '/vendor/');
+  $loader->register();
+}
 
 require_once __DIR__ . '/vendor/PHPMailer/class.phpmailer.php';
 

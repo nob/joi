@@ -39,6 +39,9 @@ $app->get('/assets/(:segments+)', function($segments = array()) use ($app) {
 
 $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
+    $requesting_xml = false;
+    $content_found  = false;
+    
     // segments
     foreach ($segments as $key => $seg) {
         $count                            = $key + 1;
@@ -56,6 +59,13 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
     // determine paths
     $path                  = '/' . implode($segments, '/');
+    
+    // let XML files through
+    if (substr($path, -4) == '.xml') {
+        $path = substr($path, 0, -4);
+        $requesting_xml = true;
+    }
+    
     $current_url           = $path;
     $complete_current_url  = Path::tidy(Config::getSiteRoot() . "/" . $current_url);
 
@@ -102,8 +112,9 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         }
 
         $template_list = array($template);
+        $content_found = true;
 
-        // actual file exists
+    // actual file exists
     } elseif (File::exists("{$content_root}/{$path}.{$content_type}")) {
         $add_prev_next   = true;
         $template_list[] = 'post';
@@ -112,8 +123,12 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
         $data                = Content::get($complete_current_url);
         $data['current_url'] = $current_url;
         $data['slug']        = basename($current_url);
+        
+        if ($path !== "404") {
+            $content_found = true;
+        }
 
-        // url is taxonomy-based
+    // url is taxonomy-based
     } elseif (Taxonomy::isTaxonomyURL($path)) {
         list($type, $slug) = Taxonomy::getCriteria($path);
 
@@ -128,13 +143,16 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
         $template_list[] = "taxonomies";
         $template_list[] = $type;
+        $content_found = true;
 
         // this is a directory,so we look for page.md
     } elseif (is_dir("{$content_root}/{$path}")) {
         $data = Content::get($complete_current_url);
+        $content_found = true;
+    }
 
-        // Not found. 404 O'Clock.
-    } else {
+    // Nothing found. 404 O'Clock.
+    if (!$content_found || ($requesting_xml && (!isset($data['_type']) || $data['_type'] != 'xml'))) {
         // determine where user came from for log message
         if (strstr($path, 'favicon.ico')) {
             // Favicons are annoying.
@@ -197,14 +215,14 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
     // status
     if (preg_match("/\/_[^_]/", $path) && !$app->config['logged_in']) {
-        $data          = Content::get("/404");
+        $data          = Content::get(Path::tidy(Config::getSiteRoot() . "/404"));
         $template_list = array('404');
         $visible       = false;
         $response_code = 404;
 
         // legacy status
     } elseif (isset($data['status']) && $data['status'] != 'live' && $data['status'] != 'hidden' && !$app->config['logged_in']) {
-        $data          = Content::get("/404");
+        $data          = Content::get(Path::tidy(Config::getSiteRoot() . "/404"));
         $template_list = array('404');
         $visible       = false;
         $response_code = 404;
@@ -245,8 +263,8 @@ $app->map('/(:segments+)', function ($segments = array()) use ($app) {
 
     // set type, allows for RSS feeds
     if (isset($data['_type'])) {
-        if ($data['_type'] == 'rss') {
-            $data['_xml_header']      = '<?xml version="1.0" encoding="utf-8"?>';
+        if ($data['_type'] == 'rss' || $data['_type'] == 'xml') {
+            $data['_xml_header']      = '<?xml version="1.0" encoding="utf-8" ?>';
             $response                 = $app->response();
             $response['Content-Type'] = 'application/xml';
         }

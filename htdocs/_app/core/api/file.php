@@ -259,7 +259,7 @@ class File
 
     /**
      * Resolves a path's MIME type
-     * 
+     *
      * @param string  $path  Path to resolve
      * @return string
      */
@@ -271,7 +271,7 @@ class File
 
     /**
      * Cleans up a file name
-     * 
+     *
      * @param string  $path  Path and file name to clean up
      * @return string
      */
@@ -281,6 +281,17 @@ class File
         $path = str_replace('.'.$extension, '', $path);
 
         return Slug::make($path) . '.' . $extension;
+    }
+
+    /**
+     * Removes any filesystem path outside of the site root
+     *
+     * @param string  $path  Path to trim
+     * @return string
+     */
+    public static function cleanURL($path)
+    {
+        return str_replace(Path::standardize(BASE_PATH), "", $path);
     }
 
     /**

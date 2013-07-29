@@ -189,4 +189,28 @@ class Path
     {
         return str_replace('\\', '/', $path);
     }
+    
+    
+    /**
+     * Prepends a / to a given $path if it's not there
+     * 
+     * @param string  $path  path to check
+     * @return string
+     */
+    public static function addStartingSlash($path)
+    {
+        return (substr($path, 0, 1) !== '/') ? '/' . $path : $path;
+    }
+    
+    
+    /**
+     * Removes the / from the beginning of a given $path if it's there
+     * 
+     * @param string  $path  path to check
+     * @return string
+     */
+    public static function removeStartingSlash($path)
+    {
+        return (substr($path, 0, 1) === '/') ? substr($path, 1) : $path;
+    }
 }

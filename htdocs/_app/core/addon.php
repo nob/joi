@@ -52,6 +52,12 @@ abstract class Addon
     public $addon_type;
 
     /**
+     * Path to Addon in filesystem
+     * @public string
+     */
+    public $addon_path;
+
+    /**
      * Array of settings from this add-ons config
      * @public array
      */
@@ -73,6 +79,7 @@ abstract class Addon
     {
         $this->addon_name = $this->getAddonName();
         $this->addon_type = $this->getAddonType();
+        $this->addon_path = Path::tidy(Config::getSiteRoot() . Config::getAddonPath($this->addon_name));
         $this->config     = $this->getConfig();
         $this->tasks      = (!$this->skip_tasks) ? $this->getTasks() : null;
 

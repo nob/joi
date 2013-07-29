@@ -284,7 +284,7 @@ class Helper
             $output = array();
         } else {
             $output = array_map(function($item) {
-                return ($item === "/") ? "" : $item;
+                return Path::removeStartingSlash($item);
             }, $output);
         }
         

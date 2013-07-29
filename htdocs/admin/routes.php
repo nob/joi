@@ -314,9 +314,10 @@ $admin_app->post('/publish', function() use ($admin_app) {
         $errors['title'] = 'is required';
       }
 
+      $slug = Slug::make($form_data['meta']['slug']);
+
       if ($index_file) {
         // some different validation rules
-        $slug = $form_data['meta']['slug'];
         if ($slug == '') {
           $errors['slug'] = 'is required';
         } else {
@@ -338,7 +339,6 @@ $admin_app->post('/publish', function() use ($admin_app) {
           }
         }
       } elseif (isset($form_data['type']) && $form_data ['type'] == 'none') {
-        $slug = $form_data['meta']['slug'];
         $file = $content_root."/".$path."/".$slug.".".$content_type;
         if (File::exists($file)) {
           $errors['slug'] = 'already exists';
@@ -350,7 +350,6 @@ $admin_app->post('/publish', function() use ($admin_app) {
           $entries = Statamic::get_content_list(dirname($path),null,0,true,true);
         }
 
-        $slug = $form_data['meta']['slug'];
         if ($slug == '') {
           $errors['slug'] = 'is required';
         } else {
@@ -574,6 +573,7 @@ $admin_app->post('/publish', function() use ($admin_app) {
   }
 
   $fieldset = null;
+  $field_settings = array();
   if (count($data['fields']) < 1 && file_exists("{$content_root}/{$folder}/fields.yaml")) {
     $fields_raw = File::get("{$content_root}/{$folder}/fields.yaml");
     $fields_data = YAML::Parse($fields_raw);
@@ -666,7 +666,7 @@ $admin_app->post('/publish', function() use ($admin_app) {
   // Do we need to rename the file?
   if ( ! isset($form_data['new'])) {
 
-    $new_slug = $form_data['meta']['slug'];
+    $new_slug = Slug::make($form_data['meta']['slug']);
 
     if ($form_data['type'] == 'date') {
       if (Config::getEntryTimestamps()) {
@@ -943,6 +943,7 @@ $admin_app->get('/publish', function() use ($admin_app) {
     print "NO PATH";
   }
 
+  $data['full_slug'] = Path::tidy($data['full_slug']);
   $data['templates'] = Theme::getTemplates();
   $data['layouts'] = Theme::getLayouts();
 
@@ -1204,7 +1205,7 @@ $admin_app->get('/system', function() use ($admin_app) {
 
       $http = curl_init($test_url);
       curl_setopt($http, CURLOPT_RETURNTRANSFER, 1);
-      curl_setopt($http, CURLOPT_TIMEOUT_MS, 500);
+      curl_setopt($http, CURLOPT_TIMEOUT, 3);
       $result = curl_exec($http);
       $http_status = curl_getinfo($http, CURLINFO_HTTP_CODE);
       curl_close($http);
@@ -1251,7 +1252,7 @@ $admin_app->get('/logs', function() use ($admin_app) {
   // determine actual path
   $data['path'] = $data['raw_path'];
   if (!in_array(substr($data['raw_path'], 0, 1), array("/", "."))) {
-    $data['path'] = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . $data['raw_path'];
+    $data['path'] = BASE_PATH . DIRECTORY_SEPARATOR . $data['raw_path'];
   }
 
   // is log folder writable?

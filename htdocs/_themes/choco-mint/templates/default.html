@@ -28,10 +28,11 @@
             <div class="container">
                 <h1 class="text-center hidden-desktop">料金</h1>
                 <section class="row featurette">
-                {{ pages:listing folder="price"}}
+                {{ get_content from="price"}}
                     <h2>{{ title }}</h2>
-                    {{ content|truncate:300 }}
-                {{ /pages:listing }}
+                    <!-- {{ content|truncate:300 }} -->
+                    {{ content }}
+                {{ /get_content }}
                 </section>
             </div>
         </section>

@@ -731,7 +731,7 @@ class Parser
         }
         $glue = preg_quote($this->scopeGlue, '/');
 
-        $this->variableRegex = $glue === '\\.' ? '[|a-zA-Z\-\+\*\/,0-9_'.$glue.']+' : '[|a-zA-Z\-\+\*\/,0-9_\.'.$glue.']+';
+        $this->variableRegex = $glue === '\\.' ? '[|a-zA-Z\-\+\*%\^\/,0-9_'.$glue.']+' : '[|a-zA-Z\-\+\*%\^\/,0-9_\.'.$glue.']+';
         $this->callbackNameRegex = $this->variableRegex.$glue.$this->variableRegex;
         $this->variableLoopRegex = '/\{\{\s*('.$this->variableRegex.')\s*\}\}(.*?)\{\{\s*\/\1\s*\}\}/ms';
         $this->variableTagRegex = '/\{\{\s*('.$this->variableRegex.')\s*\}\}/m';
@@ -1133,7 +1133,7 @@ class Parser
                     $data = \Math::getDistanceInKilometers($point_1, $point_2);
 
                 } else if ($modifier_name == 'smartypants') {
-                    $data = SmartyPants($data);
+                    $data = SmartyPants($data, 2);
 
                 } else if ($modifier_name == 'widont') {
                     // thanks to Shaun Inman for inspriation here

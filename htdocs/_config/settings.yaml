@@ -73,6 +73,9 @@ _enable_smartypants: true
 # set to 'true' to enable theme caching busting based on last modified timestamps
 _theme_cache_bust: false
 
+# Specify where to save transformed images
+_transform_destination: false
+
 # allow the use of PHP in Statamic templates
 _allow_php: false
 
@@ -160,6 +163,12 @@ _admin_nav:
 
 # When you log in, where would you like to start?
 _admin_start_page: system
+
+# Enable/Disable the ability to add new top level pages via the CP
+_enable_add_section: true
+
+# Enable/Disable the ability to add new child pages via the CP
+_enable_add_child_page: true
 
 # Change this to make your site more secure
 _cookies.secret_key: TAME_EL_WILD #changeme!

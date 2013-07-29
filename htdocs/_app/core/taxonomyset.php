@@ -1,6 +1,13 @@
 <?php
 /**
  * TaxonomySet
+ * Special content container for dealing with taxonomies
+ *
+ * @author      Jack McDade
+ * @author      Fred LeBlanc
+ * @author      Mubashar Iqbal
+ * @package     Core
+ * @copyright   2013 Statamic
  */
 class TaxonomySet
 {

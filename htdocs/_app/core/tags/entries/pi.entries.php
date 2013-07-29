@@ -20,7 +20,7 @@ class Plugin_entries extends Plugin
      */
     public function listing()
     {
-        $folders = $this->fetchParam('folder', ltrim($this->fetchParam('from', URL::getCurrent()), "/"));
+        $folders = $this->fetchParam('folder', $this->fetchParam('folders', ltrim($this->fetchParam('from', URL::getCurrent()), "/")));
         $folders = ($folders === "/") ? "" : $folders;
 
         if ($this->fetchParam('taxonomy', false, null, true, null)) {
@@ -47,6 +47,9 @@ class Plugin_entries extends Plugin
         // sort
         $content_set->sort($this->fetchParam('sort_by', 'order_key'), $this->fetchParam('sort_dir'));
 
+        // grab total entries for setting later
+        $total_entries = $content_set->count();
+
         // limit
         $limit     = $this->fetchParam('limit', null, 'is_numeric');
         $offset    = $this->fetchParam('offset', 0, 'is_numeric');
@@ -61,6 +64,12 @@ class Plugin_entries extends Plugin
                 $content_set->limit($limit, $offset);
             }
         }
+        
+        // manually supplement
+        $content_set->supplement(array(
+            'total_found'    => $total_entries,
+            'group_by_date'  => $this->fetchParam("group_by_date", null, null, false, false)
+        ));
 
         // check for results
         if (!$content_set->count()) {
@@ -194,14 +203,7 @@ class Plugin_entries extends Plugin
 
         // re-filter, we only want entries that have been found
         $content_set->filter(array(
-            'located'     => true,
-            'show_all'    => $this->fetchParam('show_hidden', false, null, true, false),
-            'since'       => $this->fetchParam('since'),
-            'until'       => $this->fetchParam('until'),
-            'show_past'   => $this->fetchParam('show_past', true, null, true),
-            'show_future' => $this->fetchParam('show_future', false, null, true),
-            'type'        => 'entries',
-            'conditions'  => trim($this->fetchParam('conditions', null))
+            'located'     => true
         ));
 
         // sort

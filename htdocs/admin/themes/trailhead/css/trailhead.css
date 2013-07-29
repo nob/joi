@@ -3273,7 +3273,11 @@ code textarea {
 .grid tbody tr td {
   padding: 15px; }
 .grid tbody label {
-  display: none; }
+  display: none;
+  text-transform: none; }
+.grid tbody input + label {
+  display: inline-block;
+  margin-left: 5px; }
 .grid .cell-text input, .grid .cell-date input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;

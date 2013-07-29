@@ -20,7 +20,7 @@ class Plugin_pages extends Plugin
      */
     public function listing()
     {
-        $folders = $this->fetchParam('folder', ltrim($this->fetchParam('from', URL::getCurrent()), "/"));
+        $folders = $this->fetchParam('folder', $this->fetchParam('folders', ltrim($this->fetchParam('from', URL::getCurrent()), "/")));
         $folders = ($folders === "/") ? "" : $folders;
 
         if ($this->fetchParam('taxonomy', false, null, true, null)) {
@@ -47,6 +47,9 @@ class Plugin_pages extends Plugin
         // sort
         $content_set->sort($this->fetchParam('sort_by', 'order_key'), $this->fetchParam('sort_dir'));
 
+        // grab total entries for setting later
+        $total_entries = $content_set->count();
+
         // limit
         $limit     = $this->fetchParam('limit', null, 'is_numeric');
         $offset    = $this->fetchParam('offset', 0, 'is_numeric');
@@ -61,6 +64,9 @@ class Plugin_pages extends Plugin
                 $content_set->limit($limit, $offset);
             }
         }
+
+        // manually supplement
+        $content_set->supplement(array('total_found' => $total_entries));
 
         // check for results
         if (!$content_set->count()) {

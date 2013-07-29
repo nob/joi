@@ -15,6 +15,7 @@ class Fieldtype_grid extends Fieldtype
     // determine boundaries
     $max_rows = (isset($this->field_config['max_rows']) && is_numeric($this->field_config['max_rows'])) ? ' data-max-rows="' . $this->field_config['max_rows'] . '"' : '';
     $min_rows = (isset($this->field_config['min_rows']) && is_numeric($this->field_config['min_rows'])) ? ' data-min-rows="' . $this->field_config['min_rows'] . '"' : '';
+    $starting_rows = array_get($this->field_config, 'starting_rows', 1);
 
     // not here, we'll do this last so we can inject another data setting
     // $html = "<table class='grid table-list' tabindex='{$this->tabindex}'" . $max_rows . $min_rows . ">";
@@ -42,12 +43,11 @@ class Fieldtype_grid extends Fieldtype
     $html .= "<tbody>\n";
 
     # rows to render, in order will prefer: starting_rows, min_rows, 1
-    if (isset($this->field_config['starting_rows']) && is_numeric($this->field_config['starting_rows'])) {
-      $rows_to_render = $this->field_config['starting_rows'];
-    } elseif (isset($this->field_config['min_rows']) && is_numeric($this->field_config['min_rows'])) {
+
+    if (isset($this->field_config['min_rows']) && is_numeric($this->field_config['min_rows'])) {
       $rows_to_render = $this->field_config['min_rows'];
     } else {
-      $rows_to_render = 1;
+      $rows_to_render = $starting_rows;
     }
 
     # render the rows
@@ -92,7 +92,7 @@ class Fieldtype_grid extends Fieldtype
     $html .= "</tbody>\n</table>\n";
 
     // If max_rows is 1, we shouldn't have an "add row" at all.
-    if (array_get($this->field_config, 'max_rows', false) !== 1) {
+    if (array_get($this->field_config, 'max_rows', 9999) > $starting_rows) {
       $html .= "<a href='#' class='grid-add-row btn btn-small btn-icon'><span class='icon'>Z</span>add row</a>";
     }
 

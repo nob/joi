@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <title>Statamic Control Panel</title>
   <link rel="stylesheet" href="<?php print Path::tidy(Config::getSiteRoot().'/'.$app->config['theme_path']) ?>css/trailhead.css">
-  <link rel="icon" href="<?php print Path::tidy(Config::getSiteRoot().'/'.$app->config['theme_path'])?>img/favicon.png" sizes="16x16" type="img/png" />
+  <link rel="shortcut icon" href="<?php print Path::tidy(Config::getSiteRoot().'/'.$app->config['theme_path'])?>img/favicon.ico" />
   <script type="text/javascript" src="<?php print Path::tidy(Config::getSiteRoot().'/'.$app->config['theme_path'])?>js/jquery.min.js"></script>
   <script type="text/javascript" src="<?php print Path::tidy(Config::getSiteRoot().'/'.$app->config['theme_path'])?>js/underscore.min.js"></script>
   <?php print Hook::run('control_panel', 'add_to_head', 'cumulative') ?>

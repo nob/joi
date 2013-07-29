@@ -867,7 +867,11 @@ code textarea {
     @include gradient(#fff, #f1f1f1);
   }
   tbody tr td {padding:15px;}
-  tbody label {display:none;}
+  tbody label {display:none; text-transform: none}
+  tbody input + label {
+    display: inline-block;
+    margin-left: 5px;
+  }
   .cell-text input, .cell-date input {
     @include border-radius(0);
     border:1px solid rgba(0,0,0,.15);
