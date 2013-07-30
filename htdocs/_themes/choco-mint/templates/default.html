@@ -15,7 +15,9 @@
                 <div class="span5">
                     <h2>{{ title }}<small><br>{{ sub-title }}</small></h2>
                     <p>{{ content }}</p>
-                    <p><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                    {{ if back-url }}
+                    <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">詳しく読む&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                    {{ endif }}
                 </div>
                 </section>
                 {{ if !last}}

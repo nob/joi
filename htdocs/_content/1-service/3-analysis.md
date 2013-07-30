@@ -3,7 +3,6 @@ title:サイトに訪れた人の反応と<br>動向の分析結果をレポー�
 _template: service
 _fieldset: entry
 image: service-3-l.png
-back-url: "/#service"
 ---
 どんなにカッコイイ ウェブサイトでも、ただ作っただけで放置していては、残念ながら、誰の目にも触れられません。人が訪れ易い様に改善を施していく必要があります。
 
