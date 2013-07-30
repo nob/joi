@@ -28,11 +28,11 @@
             <div class="container">
                 <h1 class="text-center hidden-desktop">料金</h1>
                 <section class="row featurette">
-                {{ get_content from="price"}}
+                {{ pages:listing folder="price"}}
                     <h2>{{ title }}</h2>
-                    <!-- {{ content|truncate:300 }} -->
-                    {{ content }}
-                {{ /get_content }}
+                    {{ content|truncate:980 }}
+                    <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                {{ /pages:listing }}
                 </section>
             </div>
         </section>
