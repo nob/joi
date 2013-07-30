@@ -3,7 +3,7 @@ title: Facebook、 Facebook、 <br>はい、Facebook。
 _template: service
 _fieldset: entry
 image: service-4-l.png
-back-url: /#service
+back-url: "/#service"
 ---
 あなたのビジネスや活動を口コミで広めてファンを増やしたり、そのファンの人達との交流をしたり。現在Facebookは、そのガイドラインに沿って上手く使えば、とても有効なプロモーション手段になります。ただ、そのガイドラインや上手な使い方が判り難いのも確かです。
 

@@ -4,7 +4,7 @@ _template: service
 _fieldset: entry
 sub-title: スマートフォン用 + パソコン用
 image: service-1-l.png
-back-url: /#service
+back-url: "/#service"
 ---
 あなたのビジネスをブランドと考え、訪問者が見ている画面上にそのブランドイメージを表現する事。あなたのビジネスが届けたいメッセージを吟味し、デザインする事。ジョインタネットはウェブサイトの制作時にそれを大切にします。
 
