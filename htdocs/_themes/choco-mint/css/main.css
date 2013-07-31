@@ -92,13 +92,19 @@ body {
 	display: block;
 }
 #message h1 {
-	background-color: transparent;
-	color: #E9B2B7;
-	text-shadow: 0px 2px 4px #4A4A4A;
+	background-color: #fff;
 	position: absolute;
 	font-size: 40px;
 	top: 170px;
 	left: 250px;
+	margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+	color: #B32034;
+	/*color: #CA7C86;*/
+	/*color: #E9B2B7;*/
+	text-shadow: 0px 2px 2px #4A4A4A;
+    background: rgba(255, 255, 255, 0.7);
 }
 #service, #price, #works, #detail{
 	padding: 60px 0;
