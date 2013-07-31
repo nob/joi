@@ -100,7 +100,7 @@ body {
 	top: 170px;
 	left: 250px;
 }
-#service, #price, #works{
+#service, #price, #works, #detail{
 	padding: 60px 0;
    	min-width:100%;
 }
@@ -147,6 +147,13 @@ h6 small
 	margin: 20px 0;
 }
 .featurette-image {
+}
+.illustration {
+	display: block;
+	margin: 0px auto;
+	padding: 7.5% 7.5%;
+	width: 85%;
+	height: 85%;
 }
 .featurette-image.pull-right {
 	margin-left: 70px;

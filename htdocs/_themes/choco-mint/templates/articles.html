@@ -1,13 +1,13 @@
-<section id="service">
+<section id="detail">
     <div class="container">
-        <section class="row">
         <h1 class="text-center">{{ title }}<small><br>{{ sub-title }}</small></h1>
-        <div>
-            <img src="/assets/img/{{ image }}" alt="{{ title }}"></img>
+        <div class="row">
+            <div class="span5">
+                <img class="illustration" src="/assets/img/{{ image }}" alt="{{ title }}"></img>
+            </div>
+            <div>
+                {{ content }}
+            </div>
         </div>
-        <div>
-            {{ content }}
-        </div>
-        </section>
     </div>
 </section>
