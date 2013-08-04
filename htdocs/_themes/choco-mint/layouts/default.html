@@ -56,8 +56,7 @@
                         <address class="clearfix">
                             <h4>ジョインタネット</h4>
                             <p><small>住所:&nbsp;</small>〒547-0026 大阪府 大阪市平野区喜連西 4-7-16-408</p>
-                            <p><small>電話:&nbsp;</small>050−3697-1928&nbsp;(Japan)</p>
-                            <p><small>Email:&nbsp;</small><a href="mailto:hello@jointanet.com">hello@jointanet.com</a></p>
+                            <p><small>電話:&nbsp;</small>050−3697-1928</p>
                             <p><small>事業内容:&nbsp;</small>インターネット/ウェブ システムデザイン、制作、コンサルティング</p>
                         </address>
                         <address class="clearfix">
@@ -65,38 +64,47 @@
                             <p><small>代表:&nbsp;</small><strong>山辺&nbsp;登</strong></p>
                         </address>
                     </div>
-                    <!--
-                    <div class="span6">
-                        <h5>以下の入力フォームから、いつでもお気軽にご相談、ご質問下さい。</h5>
-                        <p><small>48時間以内にこちらからご連絡させて頂きます。</small></p>
-                        <form action="form.php" method="post" accept-charset="utf-8">
-                            <textarea name="inquiry-msg" rows="7" placeholder="あなたが既にお持ちのウェブサイトについて、　新しく制作したいウェブサイトについて、等…"></textarea>
-                            <div class="btns clearfix">
-                                <a id="btn-inquiry-next" class="btn btn-large btn-danger pull-right" type="button">次へ&nbsp;<i class="icon-chevron-right icon-white"></i></a>
+                    <div id="myCarousel" class="carousel slide span6">
+                        <form id="inquiry" action="/backend/inquiry" method="post" accept-charset="utf-8" class="carousel-inner">
+                            <div id="inquiry-1" class="active item">
+                                <h5>以下の入力フォームから、いつでもお気軽にご相談、ご質問下さい。</h5>
+                                <p><small>48時間以内にこちらからご連絡させて頂きます。</small></p>
+                                <textarea name="inquiry-msg" required="required" maxlength="20000" rows="7" placeholder="あなたが既にお持ちのウェブサイトについて、　新しく制作したいウェブサイトについて、等…"></textarea>
+                                <div class="btns clearfix">
+                                    <a id="btn-inquiry-next" class="btn btn-large btn-danger pull-right" type="button">次へ&nbsp;<i class="icon-chevron-right icon-white"></i></a>
+                                </div>
                             </div>
-                            <h5>お名前とご連絡先をお聞かせ下さい。</h5>
-                            <p><small>第三者にこれらの情報をを提供することは致しません。</small></p>
-                            <div>
-                                <label for="name">お名前</label><input type="text" name="name" value="" placeholder="">
+                            <div id="inquiry-2" class="item">
+                                <h5>お名前とご連絡先をお聞かせ下さい。</h5>
+                                <p><small>第三者にこれらの情報をを提供することは致しません。</small></p>
+                                <div>
+                                    <label for="name">お名前</label><input type="text" name="name" required="required" value="" placeholder="">
+                                </div>
+                                <div>
+                                    <label for="email">Eメールアドレス</label><input type="email" name="email" required="required" value="" placeholder="name@your-domain.com">
+                                </div>
+                                <div>
+                                    <label for="url">ウェブサイトアドレス(もし既にお持ちであれば)</label><input type="url" name="url" value="" placeholder="http://www.your-domain.com">
+                                </div>
+                                <div class="btns clearfix">
+                                    <a id="btn-inquiry-back" class="btn btn-inverse pull-left" type="button" data-slide="prev"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
+                                    <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">送信&nbsp;<i class=" icon-ok icon-white"></i></button>
+                                    <img id="loading" class="pull-right" src="/assets/img/waiting.gif" alt="sending...">
+                                </div>
                             </div>
-                            <div>
-                                <label for="email">Eメールアドレス</label><input type="email" name="email" value="" placeholder="">
+                            <div id="inquiry-3" class="item">
+                                <h3>お問い合わせありがとうございました。</h3>
+                                <p><small>48時間以内にこちらからご連絡させて頂きます。</small></p>
                             </div>
-                            <div>
-                                <label for="url">ウェブサイトアドレス(もし既にお持ちであれば)</label><input type="url" name="url" value="" placeholder="http://">
-                            </div>
-                            <div class="btns clearfix">
-                                <a id="btn-inquiry-back" class="btn btn-inverse pull-left" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>
-                                <button id="btn-inquiry-submit" class="btn btn-large btn-jointanet-1 pull-right" type="submit">送信&nbsp;<i class=" icon-ok icon-white"></i></button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                    -->
+                </div>
             </div>
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="http://cdn.jquerytools.org/1.2.7/form/jquery.tools.min.js"></script>
         <script src="/assets/js/plugins.js"></script>
         <script src="/assets/js/main.js"></script>
         {{ if enable_analytics }}

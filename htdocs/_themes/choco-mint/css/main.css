@@ -98,7 +98,7 @@ body {
 	top: 170px;
 	left: 250px;
 	margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
 	color: #B32034;
 	/*color: #CA7C86;*/
@@ -221,10 +221,13 @@ h6 small
 	color: #8ECFC3;
 }
 #site-footer textarea {
-	width: 98%;
+	width: 90%;
 }
 #site-footer .btns {
 	margin-top: 15px;
+}
+#btn-inquiry-next {
+	display:none;
 }
 #btn-inquiry-submit{
 	margin-right: 100px;
@@ -241,10 +244,53 @@ h6 small
 	width: 55%;
 	min-width: 260px;
 }
+img#loading {
+	display: none;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 15px;
+	left: 80px;
+	z-index: 2;
+}
 img.face {
 	margin: 0 20px 0 0;
 	width: 100px;
 	height: 100px;
+}
+
+/* error message */
+.error {
+	/* supply height to ensure consistent positioning for every browser */
+	height:17px;
+	background-color:#D6452B;
+	border: 1px solid #e39486;
+	color:#000;
+	padding:2px 10px;
+	margin-left:-2px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:0px 0px 5px #F7E8C5;
+	-moz-box-shadow:0px 0px 5px #F7E8C5;
+	-webkit-box-shadow:0px 0px 5px #F7E8C5;
+	/* positioning */
+	position:absolute;
+}
+.error p {
+	margin: 0 0;
+}
+/* pure CSS arrow */
+.error em {
+	display:block;
+	width:0;
+	height:0;
+	border:10px solid;
+	border-color: transparent transparent #D6452B;
+	/* positioning */
+	position:absolute;
+	top:-17px;
+	left:60px;
 }
 
 /* ------------------------------------------------------------
