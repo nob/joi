@@ -10,4 +10,4 @@ image: service-4-l.png
 ジョインタネットは常に変わりゆくFacebookの動向を追いながら、あなたのFacebookページとあなたのウェブサイトを**効果的に連携して活用**する方法をご提案していきます。
 
 
-[あなたがのビジネスがfacebookページだけでは無く、独自のウェブサイトを所有するべき理由](/articles/facebook)
+[あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値](/articles/facebook)
