@@ -106,7 +106,7 @@ body {
 	text-shadow: 0px 2px 2px #4A4A4A;
     background: rgba(255, 255, 255, 0.7);
 }
-#service, #price, #works, #detail{
+#service, #price, #works, #details{
 	padding: 60px 0;
    	min-width:100%;
 }
