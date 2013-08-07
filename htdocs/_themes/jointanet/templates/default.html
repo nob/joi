@@ -9,10 +9,10 @@
                 <h1 class="text-center hidden-desktop">ジョインタネットのサービス</h1>
                 {{ entries:listing folder="service" }}
                 <section class="row featurette">
-                <div class="span7  {{ switch between="pull-left | pull-right" }}">
+                <div class="span6  {{ switch between="pull-left | pull-right" }}">
                     <img class="featurette-image illustration" src="/assets/img/{{ image }}" alt="{{ title }}"></img>
                 </div>
-                <div class="span5">
+                <div class="span6">
                     <h2>{{ title }}<small><br>{{ sub-title }}</small></h2>
                     <p>{{ content }}</p>
                     {{ if back-url }}
@@ -30,11 +30,13 @@
             <div class="container">
                 <h1 class="text-center hidden-desktop">料金</h1>
                 <section class="row featurette">
-                {{ pages:listing folder="price"}}
-                    <h2>{{ title }}</h2>
-                    {{ content|truncate:1214 }}
-                    <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
-                {{ /pages:listing }}
+                  <div class="span12">
+                  {{ pages:listing folder="price"}}
+                      <h2>{{ title }}</h2>
+                      {{ content|truncate:1214 }}
+                      <p class="text-right"><a class="btn btn-jointanet-2" href="{{ url }}">料金について詳しく&nbsp;<i class="icon-forward icon-white"></i></a></p>
+                  {{ /pages:listing }}
+                  </div>
                 </section>
             </div>
         </section>
