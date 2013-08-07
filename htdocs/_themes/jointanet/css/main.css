@@ -107,7 +107,7 @@ body {
     background: rgba(255, 255, 255, 0.7);
 }
 #service, #price, #works, #details{
-	padding: 60px 0;
+	padding: 60px 0 80px;
    	min-width:100%;
 }
 h1 {
@@ -171,9 +171,6 @@ h6 small
    	background-repeat: repeat;
     background-image: url(../img/green-fibers.png);
 }
-#works .thumbnail {
-
-}
 
 #works .thumbnail {
   border: 0px solid #ddd;
@@ -197,6 +194,10 @@ h6 small
 #works .thumbnail > img:hover {
 	opacity: 1.0;
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+#works p strong{
+	color: #993A43;
 }
 
 #site-footer {
@@ -495,9 +496,10 @@ img.face {
 		-ms-transform: rotate(45deg);
 	}
 	#message h1 {
-		top: 220px;
-		left: 10px;
-		font-size: 22px;
+		top: 90px;
+		left: 30px;
+		font-size: 21px;
+		padding: 5px;
 	}
 	/* font size change */
 	.container h1 {
