@@ -106,7 +106,7 @@ body {
 	text-shadow: 0px 2px 2px #4A4A4A;
     background: rgba(255, 255, 255, 0.7);
 }
-#service, #price, #works, #details{
+#services, #price, #works, #details{
 	padding: 60px 0 80px;
    	min-width:100%;
 }
@@ -483,7 +483,7 @@ img.face {
  	#message {
 	   	height: 320px;
 	}
-	#service, #price, #works{
+	#services, #price, #works{
 		padding: 30px 0;
 	}
 	#radio-wave {

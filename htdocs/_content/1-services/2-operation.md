@@ -1,6 +1,6 @@
 ---
 title: ウェブサイトの<br>活用サポートやアドバイス
-_template: service
+_template: services
 _fieldset: entry
 image: service-2-l.png
 ---

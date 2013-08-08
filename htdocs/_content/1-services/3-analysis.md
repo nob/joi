@@ -1,6 +1,6 @@
 ---
 title:サイトに訪れた人の反応と<br>動向の分析結果をレポート
-_template: service
+_template: services
 _fieldset: entry
 image: service-3-l.png
 ---

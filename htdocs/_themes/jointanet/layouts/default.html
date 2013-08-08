@@ -18,10 +18,10 @@
         <!-- <link rel="stylesheet" href="css/bootstrap-responsive.min.css"> -->
         <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="/assets/css/main.css">
-        {{ if _template === 'service' }}
-        <link rel="stylesheet" href="/assets/css/service.css">
-        {{ elseif _template == 'work' }}
-        <link rel="stylesheet" href="/assets/css/work.css">
+        {{ if _template === 'services' }}
+        <link rel="stylesheet" href="/assets/css/services.css">
+        {{ elseif _template == 'works' }}
+        <link rel="stylesheet" href="/assets/css/works.css">
         {{ elseif _template == 'price' }}
         <link rel="stylesheet" href="/assets/css/price.css">
         {{ elseif _template == 'articles' }}
@@ -45,9 +45,9 @@
             <div class="container clearfix">
                 <a class="logo" href="/"><img src="/assets/img/logo-l.png" alt="Jointanet"></a>
                 <ul class="nav visible-desktop clearfix">
-                    <li class="text-center"><a href="{{ if current_path !== '/' }}/{{ endif}}#service"><strong>サービス</strong></a></li>
-                    <li class="text-center"><a href="{{ if current_path !== '/' }}/{{ endif}}#price"><strong>料金</strong></a></li>
-                    <li class="text-center"><a href="{{ if current_path !== '/' }}/{{ endif}}#works"><strong>制作事例</strong></a></li>
+                    <li class="text-center {{if segment_1 === 'services'}}active{{ endif }}"><a href="{{ if current_path !== '/' }}/{{ endif}}#service"><strong>サービス</strong></a></li>
+                    <li class="text-center {{if segment_1 === 'price'}}active{{ endif }}"><a href="{{ if current_path !== '/' }}/{{ endif}}#price"><strong>料金</strong></a></li>
+                    <li class="text-center {{if segment_1 === 'works'}}active{{ endif }}"><a href="{{ if current_path !== '/' }}/{{ endif}}#works"><strong>制作事例</strong></a></li>
                 </ul>
                 {{ if current_path !== '/' }}
                 <a id="btn-back-to-home" class="btn btn-inverse pull-left hidden-desktop" href="{{ back-url }}" type="button"><i class="icon-chevron-left icon-white"></i>&nbsp;戻る</a>

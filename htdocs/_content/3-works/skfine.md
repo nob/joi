@@ -1,6 +1,6 @@
 ---
-title: SKfine.co.ltd.
-_template: work
+title: 制作事例
+_template: works
 _fieldset: entry
 screenshot: skfine.png
 domain: www.skfine.com

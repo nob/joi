@@ -1,6 +1,6 @@
 ---
 title: ウェブサイト企画/制作
-_template: service
+_template: services
 _fieldset: entry
 sub-title: スマートフォン用 + パソコン用
 image: service-1-l.png

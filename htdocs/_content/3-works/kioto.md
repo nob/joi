@@ -1,6 +1,6 @@
 ---
-title: Kioto inc.
-_template: work
+title: 制作事例
+_template: works
 _fieldset: entry
 screenshot: kioto.png
 domain: www.kiotoinc.com

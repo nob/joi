@@ -1,6 +1,6 @@
 ---
 title: Facebook、 Facebook、 <br>はい、Facebook。
-_template: service
+_template: services
 _fieldset: entry
 image: service-4-l.png
 ---
