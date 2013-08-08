@@ -52,7 +52,7 @@
 <body title="339666">
 <div style="font-size: 16px; font-weight: normal;">
 <p><?php echo $name;?> 様</p>
-<p>Jointanetへお問い合わせありがとうございます。程なくこちらからご連絡させて頂きます。</p>
+<p>ジョインタネットへお問い合わせありがとうございます。程なくこちらからご連絡させて頂きます。</p>
 <br/>
 <p>Hi <?php echo $name;?></p>
 <p>Thank you for your inquiry. We will get back to you soon!</p>
