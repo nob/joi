@@ -939,6 +939,10 @@ class Parser
                 } else if ($modifier_name == 'format') {
                     $data = date($modifier_params[0], $data);
 
+                } else if ($modifier_name == 'format_number') {
+                    $decimals = (isset($modifier_params[0])) ? $modifier_params[0] : 0;
+                    $data = number_format($data, $decimals);
+
                 } else if ($modifier_name == 'in_future') {
                     $data = (\Date::resolve($data) > time()) ? "true" : "";
 

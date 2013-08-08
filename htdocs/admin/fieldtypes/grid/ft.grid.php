@@ -34,7 +34,6 @@ class Fieldtype_grid extends Fieldtype
       // append to HTML output
       $html .= "<th style='width:{$width}'>". array_get($cell_field_config, 'display', Slug::prettify($key)). "</th>\n";
     }
-    $html .= "<th class='action-col'></th>\n";
     $html .= "</tr>\n</thead>\n";
 
 
@@ -55,7 +54,7 @@ class Fieldtype_grid extends Fieldtype
     if (isset($this->field_data) && is_array($this->field_data) && count($this->field_data) > 0) {
       foreach ($this->field_data as $key => $row) {
         $html_row  = "<tr>";
-        $html_row .= "<th class='row-count drag-indicator'>{$i}</th>";
+        $html_row .= "<th class='row-count drag-indicator'><div class='count'>{$i}</div><a href='#' class='grid-delete-row confirm'><span class='ss-icon'>delete</span></a></td></th>";
 
         // foreach ($row as $column => $column_data) {
         foreach ($this->field_config['fields'] as $cell_field_name => $cell_field_config) {
@@ -77,7 +76,6 @@ class Fieldtype_grid extends Fieldtype
           $html_row .= Fieldtype::render_fieldtype($celltype, $name, $cell_field_config, $column_data);
           $html_row .= "</td>";
         }
-        $html_row .= '<td class="action"><a href="#" class="grid-delete-row confirm"><span class="icon">u</span></a></td>';
         $html_row .= "</tr>\n";
 
         $html .= $html_row;
@@ -93,7 +91,7 @@ class Fieldtype_grid extends Fieldtype
 
     // If max_rows is 1, we shouldn't have an "add row" at all.
     if (array_get($this->field_config, 'max_rows', 9999) > $starting_rows) {
-      $html .= "<a href='#' class='grid-add-row btn btn-small btn-icon'><span class='icon'>Z</span>add row</a>";
+      $html .= "<a href='#' class='grid-add-row btn btn-small btn-icon'><span class='ss-icon'>add</span></a>";
     }
 
     $empty_row = ' data-empty-row="' . htmlspecialchars($this->render_empty_row(0)) . '"';
@@ -105,7 +103,7 @@ class Fieldtype_grid extends Fieldtype
   public function render_empty_row($index)
   {
     $row = "<tr>";
-    $row .= "<th class='row-count drag-indicator'>{$index}</th>";
+    $row .= "<th class='row-count drag-indicator'><div class='count'>{$index}</div><a href='#' class='grid-delete-row confirm'><span class='ss-icon'>delete</span></a></td></th>";
 
     foreach ($this->field_config['fields'] as $cell_field_name => $cell_field_config) {
 
@@ -122,7 +120,6 @@ class Fieldtype_grid extends Fieldtype
 
       $row .= "<td class='cell-{$celltype}' data-default='{$default}'>".Fieldtype::render_fieldtype($celltype, $name, $cell_field_config, $default)."</td>";
     }
-    $row .= '<td class="action"><a href="#" class="grid-delete-row confirm"><span class="icon">u</span></a></td>';
     $row .= "</tr>\n";
 
     return $row;

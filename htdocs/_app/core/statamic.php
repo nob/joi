@@ -146,7 +146,6 @@ class Statamic
     $themes_path = array_get($config, '_themes_path', '_themes');
     $theme_name = array_get($config, '_theme', 'denali');
 
-
     if (Folder::exists($theme_files_location = URL::assemble(BASE_PATH, $themes_path, $theme_name))) {
 
       $finder = new Finder(); // clear previous Finder interator results
@@ -198,7 +197,13 @@ class Statamic
     $config['cookies.lifetime'] = $config['_cookies.lifetime'];
 
     if ($admin) {
-      $theme_path = Path::tidy('/'.$config['_admin_path'].'/'.'themes/'.$config['_admin_theme'].'/');
+      $admin_theme = array_get($config, '_admin_theme', 'ascent');
+
+      if ( ! Folder::exists(Path::tidy('/'.$config['_admin_path'].'/'.'themes/'.$admin_theme))) {
+        $admin_theme = 'ascent';
+      }
+
+      $theme_path = Path::tidy('/' . $config['_admin_path'] . '/' . 'themes/' . $admin_theme . '/');
 
       $config['_admin_path']    = $config['_admin_path'];
       $config['theme_path']     = $theme_path;
@@ -286,7 +291,7 @@ class Statamic
           if (!substr($redirect_url, 0, 4) == "http") {
               $redirect_url = Path::tidy(Config::getSiteRoot() . "/" . $redirect_url);
           }
-          
+
           // ensure a valid redirect type
           if (!in_array($redirect_type, array(301, 302))) {
               $redirect_type = 302;
@@ -606,7 +611,7 @@ class Statamic
 
       $meta['permalink'] = Path::tidy(Config::getSiteURL().'/'.$meta['page_url']);
       $taxonomy_slugify  = (isset($app->config['_taxonomy_slugify']) && $app->config['_taxonomy_slugify']);
-        
+
       # Jam it all together, brother.
       # @todo: functionize/abstract this method for more flexibility and readability
       foreach ($meta as $key => $value) {
@@ -1210,6 +1215,20 @@ class Statamic
     }
 
     return $data;
+  }
+
+  public static function get_listings()
+  {
+    $pages = self::get_content_tree('/', 1, 1000, false, false, false, false, '/');
+
+    $listings = array();
+    foreach ($pages as $page) {
+      if (array_get($page, 'has_entries', false) === true) {
+        $listings[] = $page;
+      }
+    }
+
+    return $listings;
   }
 
   public static function get_file_list($directory=NULL)

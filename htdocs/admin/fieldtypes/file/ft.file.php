@@ -7,10 +7,10 @@ class Fieldtype_File extends Fieldtype
 
     if ($this->field_data) {
       $html .= "<div class='file-exists'>";
-        if (File::isImage($this->field_data)) {
+        if (File::isImage(BASE_PATH . $this->field_data)) {
           $html .= "<img src='{$this->field_data}' height='58'>";
         }
-        $html .= "<p>$this->field_data</p>";
+        $html .= "<p>".basename($this->field_data)."</p>";
         $html .= "<a class='btn btn-small btn-remove-file' href='#'>Remove</a>";
         $html .= "<input type='hidden' name='{$this->fieldname}' value='{$this->field_data}' />";
       $html .= "</div>";

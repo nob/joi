@@ -33,10 +33,10 @@ class Plugin_transform extends Plugin
         $image_src = $this->fetchParam('src', null, false, false, false);
 
         // Set full system path
-        $image_path = Path::tidy(BASE_PATH . $image_src);
+        $image_path = Path::tidy(BASE_PATH . '/' . $image_src);
 
         // Check if image exists before doing anything.
-        if ( ! File::exists($image_path)) {
+        if ( ! File::isImage($image_path)) {
 
             Log::error("Could not find requested image to transform: " . $image_path, "core", "Transform");
 
@@ -149,8 +149,15 @@ class Plugin_transform extends Plugin
         // Allow saving in a different directory
         $destination = $this->fetchParam('destination', Config::get('transform_destination', false), false, false, false);
 
+
         if ($destination) {
-            $stripped_image_path = Path::tidy(BASE_PATH . '/' . $destination . '/' . basename($stripped_image_path));
+
+            $destination = Path::tidy(BASE_PATH . '/' . $destination);
+
+            // Method checks to see if folder exists before creating it
+            Folder::make($destination);
+
+            $stripped_image_path = Path::tidy($destination . '/' . basename($stripped_image_path));
         }
 
         // Reassembled filename with all flags filtered and delimited

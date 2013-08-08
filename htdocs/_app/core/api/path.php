@@ -143,6 +143,18 @@ class Path
         return preg_replace(Pattern::ORDER_KEY, "", $path);
     }
 
+    /**
+     * Pretty, end user paths
+     *
+     * @param string  $path  Path to clean
+     * @return string
+     */
+    public static function pretty($path)
+    {
+        return self::tidy(self::clean('/' . $path));
+    }
+
+
 
     /**
      * Checks if a given path is non-public content
@@ -189,11 +201,11 @@ class Path
     {
         return str_replace('\\', '/', $path);
     }
-    
-    
+
+
     /**
      * Prepends a / to a given $path if it's not there
-     * 
+     *
      * @param string  $path  path to check
      * @return string
      */
@@ -201,11 +213,11 @@ class Path
     {
         return (substr($path, 0, 1) !== '/') ? '/' . $path : $path;
     }
-    
-    
+
+
     /**
      * Removes the / from the beginning of a given $path if it's there
-     * 
+     *
      * @param string  $path  path to check
      * @return string
      */

@@ -350,7 +350,7 @@ class File
      **/
     public static function isImage($file)
     {
-        return self::is(array('jpg', 'jpeg', 'png', 'gif'), BASE_PATH . $file);
+        return self::is(array('jpg', 'jpeg', 'png', 'gif'), $file);
     }
 
 }
