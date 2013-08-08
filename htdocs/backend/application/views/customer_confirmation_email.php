@@ -51,16 +51,19 @@
 
 <body title="339666">
 <div style="font-size: 16px; font-weight: normal;">
+<p><?php echo $name;?> 様</p>
+<p>Jointanetへお問い合わせありがとうございます。程なくこちらからご連絡させて頂きます。</p>
+<br/>
 <p>Hi <?php echo $name;?></p>
 <p>Thank you for your inquiry. We will get back to you soon!</p>
 <p>--<br>Jointanet</p>
 </div>
 <div style="font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif; margin-top: 60px">
-<h4>Your inquiry details</h4>
+<h4>Your inquiry details / お問い合わせ内容</h4>
 <table class="readonly" cellspacing="0" cellpadding="0" style="width:100%;border-bottom:1px solid #eee;font-size:12px;line-height:135%;font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif">
     <tr style="background-color:#FFFFFF" >
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Name
+            Name / お名前
             <span class="req" style="color:red">*</span>        </th>
         <td id="roField232" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
             <div><?php echo $name;?></div>
@@ -68,7 +71,7 @@
     </tr>
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Email address
+            Email address / Eメールアドレス
             <span class="req" style="color:red;">*</span>       </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
         <a class="email" href="mailto:noboruthedragon@gmail.com"><?php echo $email;?></a>
@@ -76,7 +79,7 @@
     </tr>
     <tr style="background-color:#FFFFFF">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Website address
+            Website address / ウェブサイトアドレス
                     </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
         <a href="<?php echo $url;?>" target="_blank" class="url" rel="no-follow"><?php echo $url;?></a>
@@ -84,7 +87,7 @@
     </tr>
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Message
+            inquiry　/ お問い合わせ内容
             <span class="req" style="color:red">*</span>        </th>
                         </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
