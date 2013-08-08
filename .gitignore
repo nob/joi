@@ -1,5 +1,6 @@
 htdocs/github-pull.php
 htdocs/_cache/
 htdocs/_logs/
+htdocs/backend/application/logs/
 .DS_Store
 .*.sw*
