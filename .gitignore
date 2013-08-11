@@ -1,8 +1,16 @@
-htdocs/github-pull.php
-htdocs/_cache/
+#all content will be in symlinked external dir.
 htdocs/_content/
+#ignore a symlink for content dir.
+htdocs/_content
+
+htdocs/_cache/
+
 htdocs/_logs/
 htdocs/backend/application/logs/
+
 jointanet-web-materials/
+
+htdocs/github-pull.php
+
 .DS_Store
 .*.sw*
