@@ -180,6 +180,10 @@ class Path
      */
     public static function trimFilesystem($path)
     {
+        if ($symlinked_content_root_path = Config::get('_symlinked_content_root_path'))
+        {
+            $path = str_replace($symlinked_content_root_path, "", $path);
+        }
         return str_replace(self::standardize(BASE_PATH) . "/" . Config::getContentRoot(), "", $path);
     }
 

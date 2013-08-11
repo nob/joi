@@ -5,3 +5,6 @@
 ###########################################################################################
 
 enable_analytics: true
+
+# Change the folder path name for your symlinked external content directory, empty if external symlinked directory is not used.
+_symlinked_content_root_path: /home/nob/Dropbox/statamic_contents/jointanet.com
