@@ -1,11 +1,13 @@
 <section id="details">
     <div class="container">
-        <h1 class="text-center">{{ title }}<small><br>{{ sub-title }}</small></h1>
         <div class="row">
-            <div class="span5">
-                <img class="illustration" src="/assets/img/{{ image }}" alt="{{ title }}"></img>
-            </div>
-            <div>
+            <div class="span8 offset2">
+                <h1 class="text-center">{{ title }}<small><br>{{ sub-title }}</small></h1>
+                <div class="row">
+                    <div class="span6 offset1">
+                        <img class="illustration" src="/assets/img/{{ image }}" alt="{{ title }}"></img>
+                    </div>
+                </div>
                 {{ content }}
             </div>
         </div>
