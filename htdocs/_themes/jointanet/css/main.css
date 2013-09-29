@@ -134,7 +134,7 @@ h6 small
 #price h2 small{
 	color: #CC6871;
 }
-#details p, .featurette p {
+#details p, .featurette p, .featurette ul>li{
 	line-height: 28px;
 }
 #price .featurette h2 {
@@ -515,7 +515,7 @@ img.face {
 		line-height: 1;
 	}
 	.container p {
-		font-size: 14px;
-		line-height: 22px;
+		font-size: 16px;
+		line-height: 28px;
 	}
 }

@@ -12,10 +12,16 @@ $(window).load(function(){
 });
 
 $(document).ready(function(){
+    //set up scroll spy.
 	$('#site-header').scrollspy();
 
-	$('.carousel').carousel({ interval: false })
+    //force opening new window for pages in other hostname.
+    $(document.links).filter(function() {
+        return this.hostname != window.location.hostname;
+    }).attr('target', '_blank');
 
+    //setup input froms
+	$('.carousel').carousel({ interval: false })
 	$('textarea[name="inquiry-msg"]').focusin(function(){
 		$('#btn-inquiry-next').css('display', 'inline-block');
 	});
