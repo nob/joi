@@ -21,7 +21,10 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Jointanet
+_site_name: Jointanet - ジョインタネット
+
+# Meta description for your site
+_site_desc: 成長するあなたのビジネスを'ずっと伝える'ウェブサイト、あなたが'訪問者に体験して欲しい'ウェブサイトの制作/活用サポートをシンプル定額料金で承ります。
 
 # Change the folder name for your content directory
 _content_root: _content
