@@ -2,7 +2,7 @@
 title: Website Planning and Production
 _template: services
 _fieldset: entry
-sub-title: Website Planning and Production<small><br>for PC, Tablet and Mobile</small>
+sub-title: for PC, Tablet and Mobile
 image: service-1-l.png
 ---
 <!-- あなたのビジネスが提供しているサービスや商品、店舗を人々が**体験**するように、ウェブサイトを訪問する人々の画面上にも**その体験を表現**する事。あなたのビジネスが人々に**届けたいメッセージを吟味、デザインして**ウェブサイトという形に落とし込む事。ジョインタネットがウェブサイトの制作時に大切にしている事です。
