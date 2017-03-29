@@ -1,5 +1,5 @@
 ---
-title: FacebookやInstagram等のSNSとの連携
+title: Linkage with Facebook, Instagram and other SNS 
 _template: services
 _fieldset: entry
 image: service-4-l.png
