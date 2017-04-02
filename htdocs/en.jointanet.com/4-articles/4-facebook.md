@@ -1,36 +1,33 @@
 ---
-title: あなたがのビジネスがfacebookページだけではなく、独自のウェブサイトを持つ価値
+title: A Facebook Page for your Business may be Helpful but is it Really Enough?
 _template: articles
 _fieldset: entry
 image: service-4-l.png
 back-url: "/#service"
 ---
-あなたのビジネスの名前でFacebookページを作るという事は、あなたのビジネスが株式会社facebookが運営する巨大イベント会場にブースを無料で出店して参加しているようなものと考えられます。このイベントは毎日３６５日、２４時間行われています。参加している年齢層にはまだ若干偏りはあるものの、日本国内で最大2000万人、世界規模では最大10億人の人々が友達を連れて毎日、毎秒訪れ、共感し合う友達とお互いにコミュニケーションを取り合っているのです。
+Creating a Facebook page under your business's name is like renting a space/booth for free at the world's largest event being held by a company known across the world. Moreover this event is open to the public 24 hours a day and 365 days a year. Although percentages vary with age and place, this gathering spot boasts participants of about 25 million people in Japan and over 1.79 billion people worldwide who come to meet, chat, discover and share.
 
-これだけ沢山の人の目に触れる機会があるイベント会場で貴方のビジネスを人々に紹介しない手はありません。このイベント会場にブース/出張所を出店しましょう。つまり、あなたのビジネスの名前でFacebookページのアカウントを取得し、あなたのビジネスの情報をこのイベントの来場者に向けてどんどん発信して反応を得るべきでしょう。
+This event offers grand opportunities for any and all businesses to introduce and shake hands with an amazing number of people. Why not get a "booth" at this grand event? If you haven't already opened an account and started a Facebook page, the time is now! Start sharing your business's products and services with visitors who come to the world's largest meeting and market place.
 <br/><br/>
+**But danger lies in thinking that just because you opened a page people will come and your message will be heard. Don't become dependent on Facebook to drive your important message.**
+<br/><br/><br/><br/>
 
-**ですが、インターネット上でのあなたのビジネス活動を人々に伝えるメディアがFacebookページのみで、それに100%依存してしまうのは、あなたのビジネスにとって少々危険な事もあるのではないでしょうか。**
-<br/><br/><br/>
 
-###インターネット上でのあなたのビジネスの”本店”
-あなたのビジネスのFacebookページとは、つまり、インターネット上で行われているこのイベント会場内で株式会社facebook社から場所を間借りしているブース/出張所に過ぎません。Facebook社が取り仕切るこのイベントのルール、ポリシーやその運営方法は常に変わり続けています。間借りしている以上、そのFacebook社の変化に合わせて、従い続けなければいけません。
+###Create a Internet Presence with Your Own Domain
+It is important to keep in mind that your business Facebook page is nothing more than space/booth rented for free on a huge Internet event called Facebook. This event run has constantly changing administrative policies and rules decided by the management, i.e.Facebook. And, as long as you are borrowing a space there you must constantly follow these changes and adapt your page accordingly.
 
-またFacebookはここ数年で急激に広まったものです。大流行している今現在、そのような事は簡単に想像できる事ではありませんが、Facebook自体が廃れてしまう、無くなってしまう、何か別のものに取って変わられる、、、なんていう可能性も否定はできません。
+Even after periods of amazing rapid growth, Facebook continues to grow and expand. And although it may be hard to imagine, there may be a day soon where it looses impact, breaks apart, or morphs into something different.
 
-間借りブース/出張所とは別に、あなたのビジネスの独自のドメイン名で、インターネット上でのあなたのビジネスの身元を代表する、正式な”本店"は必要でしょう。他の何にも依存せず、あなたがあなたのビジネスの”本店”で、あなたの表現方法で、オフィシャルな情報発信を行い続ける事ができる場所。それは現実社会で独立しているあなたのビジネスにとってとても重要な意味があるはずです。
+Besides having this space/booth on Facebook, it is essential for you to create a Internet presence that is truly your own. And that can only be done by building, setting up and controlling your own "main store/office" in the form of a domain with your business's name. By purchasing a domain and building your own "main store/office" you are free to publish and share your official information as you like, without control by others. It this age of information, independence and creative freedom are essential to creating impact.
 
-**ジョインタネットは、あなたのウェブサイトとFacebookページ、両方の強みを活かしながら、インターネット上であなたのビジネス活動を人々に伝えるサポートをご提供致します。**
+**JOINTANET offers the support you need to make the best utilization of both your own website and Facebook page so that YOUR message reaches YOUR audience.**
 <br/><br/>
-###Facebookページでの表現の限界
-ご存知の通りあなたのビジネスのFacebookページは、人々のパソコンの画面からはこのように見えています。
-<br/><br/>
+###The Limits of Expression on Facebook
+As you may well know, a Facebook business page will look a lot like what you see below:
 ![Facebook page](/assets/img/fbpage.png)
-<br/><br/>
-ページ上部にはFacebookのメインカラーである青色にFacebookロゴ。その下にFacebookで定められたサイズの枠内でのバナー画像。背景は淡い青色、右側には他の会社、製品等の広告。。。
-このような画一化されたページでの制限のある表現方法で、オリジナルなあなたのビジネス活動を人々に伝えられるものになっていますか？　
 
-あなたのビジネスの独自のドメインにある、あなたのウェブサイトであれば、文字+画像+映像+音を好きなように使って、あなた自身の表現が可能です。何色の背景であろうと、どのようなレイアウト、構成にしようと、ビデオや音楽を好きなように流そうと、大きなな画面一杯の文字を使おうと、小さな文字をつかおうと自由です。商品やサービスを好きな方法で宣伝販売もできますし、どのようにお客さんとコミュニケーションを取ろうと、貴方のやり方次第です。
+The upper heading is always the familiar Facebook logo and blue color. Below that is a Facebook determined one-size-fits-all space for a banner graphic/photo. The background is light blue in color and on the right you will find ads and products from other companies. On such a standardized type of page with limited ways to express your message, is it really possible to show your originality and draw people to your business, product or service? 　
 
-**ジョインタネットは、あなたが訪問者に体験して欲しいウェブサイトを制作致します。**
+With your own domain and website it is possible to use text, graphics, photos, video, and sound as you wish to create and control the message you wish to share. With your own website, you are free to select the background color, the layout and style you wish. You can decide which video to use, what music to include, what size pictures you upload and which font you write your message in. It is up to you to decide and manage the way you want to communicate with your audience and sell your goods and services.
 
+**We at JOINTANET will help you use this freedom to create the kind of website you want your audience to experience.**
