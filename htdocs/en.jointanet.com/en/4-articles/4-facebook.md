@@ -10,8 +10,6 @@ Creating a Facebook page under your business's name is like renting a space/boot
 This event offers grand opportunities for any and all businesses to introduce and shake hands with an amazing number of people. Why not get a "booth" at this grand event? If you haven't already opened an account and started a Facebook page, the time is now! Start sharing your business's products and services with visitors who come to the world's largest meeting and market place.
 <br/><br/>
 **But danger lies in thinking that just because you opened a page people will come and your message will be heard. Don't become dependent on Facebook to drive your important message.**
-
-
 <br/><br/><br/><br/>
 
 
