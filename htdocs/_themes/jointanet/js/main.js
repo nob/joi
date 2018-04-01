@@ -39,7 +39,7 @@ $(document).ready(function(){
 		offset: [-5, 50],
 		message: '<div><em/></div>' // em element is the arrow.
 	}
-	var textarea = $('#inquiry-1 :input').validator(v_conf);
+	var textarea = $('#inquiry-1 :textarea').validator(v_conf);
 	var all_fields = $('#inquiry').validator(v_conf).submit(function(event){
 		var form = $(this);
 		// check if client-side validation passed
@@ -53,6 +53,7 @@ $(document).ready(function(){
 					$('.carousel').carousel('next');
 					setTimeout(function(){
 						$('#inquiry :input').val('');
+						$('#inquiry :textarea').val('');
 						all_fields.data("validator").reset();
 						$('.carousel').carousel('next');
 					}, 4000);
